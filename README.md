@@ -1,0 +1,2 @@
+# ConsoleCodeEditor
+ビムビムしたテキストエディタを作りたい。

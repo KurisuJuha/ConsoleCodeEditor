@@ -9,5 +9,7 @@ namespace ConsoleCodeEditor.Plugin
     public abstract class Plugin
     {
         public abstract void OnLoad();
+
+        public abstract void OnReadChar(ConsoleKeyInfo c);
     }
 }

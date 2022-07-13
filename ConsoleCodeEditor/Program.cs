@@ -13,6 +13,18 @@ namespace ConsoleCodeEditor
             {
                 plugin.OnLoad();
             }
+
+            Console.Clear();
+
+            while (true)
+            {
+                ConsoleKeyInfo c = Console.ReadKey(true);
+
+                foreach (var plugin in PluginLoader.Plugins)
+                {
+                    plugin.OnReadChar(c);
+                }
+            }
         }
     }
 }
